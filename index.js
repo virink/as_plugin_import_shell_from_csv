@@ -92,7 +92,7 @@ class Plugin {
         dialog.showOpenDialog({
           properties: ['openFile']
         }, (_filePath) => {
-          _filePath = _filePath[0]
+          _filePath = typeof _filePath == "object" && _filePath.length > 0 ? _filePath[0] : "";
           if (fs.existsSync(_filePath)) {
             self.shellData = fs.readFileSync(_filePath, { encoding: 'utf-8' });
             self.insertShellDataToGrid()
@@ -162,7 +162,7 @@ class Plugin {
       toastr.success(`${LANG['success']} -> Count : ${log.success.length}`, LANG_T['success']);
     }
     // 重新载入 Shell 数据
-    antSword.modules.shellmanager.reloadData();
+    antSword.modules.shellmanager.reloadData({ 'category': 'default' });
     this.win.win.progressOff();
   }
 }
