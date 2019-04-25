@@ -1,0 +1,20 @@
+{
+  "name": "批量导入Shell",
+  "name_en": "Import Shell From CSV",
+  "main": "index.js",
+  "icon": "list-ul",
+  "version": "0.1",
+  "description": "从 CSV 导入 Shell",
+  "description_en": "A powerful AntSword plugin to import shells from CSV",
+  "author": {
+    "name": "Virink",
+    "email": "virink@outlook.com"
+  },
+  "license": "MIT",
+  "category": "脚本管理",
+  "category_en": "shelleanager",
+  "multiple": false,
+  "scripts": [
+    "php", "asp", "aspx", "custom"
+  ]
+}
