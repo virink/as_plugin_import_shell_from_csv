@@ -152,7 +152,7 @@ class Plugin {
         'note': grid.cells(id, 0).getValue()
       }
       let ret = antSword.ipcRenderer.sendSync('shell-add', { base: data });
-      (ret instanceof Object) ? log.success.push(data['url']) : log.success.push(data['url']);
+      (ret instanceof Object) ? log.success.push(data['url']) : log.error.push(data['url']);
     });
     // 成功与失败的通知
     if (log.error.length > 0) {
