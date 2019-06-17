@@ -3,7 +3,7 @@
   "name_en": "Import Shell From CSV",
   "main": "index.js",
   "icon": "list-ul",
-  "version": "0.1",
+  "version": "0.2",
   "description": "从 CSV 导入 Shell",
   "description_en": "A powerful AntSword plugin to import shells from CSV",
   "author": {
